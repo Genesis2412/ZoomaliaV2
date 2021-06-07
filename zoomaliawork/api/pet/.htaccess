@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule ^dog?$ read.php?type=dog [L,QSA]
+RewriteRule ^cat?$ read.php?type=cat [L,QSA]
+
+RewriteRule ^dogOne?$ readOne.php?type=dog [L,QSA]
+RewriteRule ^catOne?$ readOne.php?type=cat [L,QSA]
+
+RewriteRule ^create/dog?$ create.php?type=dog [L,QSA]
+RewriteRule ^create/cat?$ create.php?type=cat [L,QSA]
+
+RewriteRule ^update/dog?$ update.php?type=dog [L,QSA]
+RewriteRule ^update/cat?$ update.php?type=cat [L,QSA]
+
+RewriteRule ^delete/dog?$ delete.php?type=dog [L,QSA]
+RewriteRule ^delete/cat?$ delete.php?type=cat [L,QSA]

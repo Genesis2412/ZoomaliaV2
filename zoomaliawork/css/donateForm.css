@@ -1,0 +1,263 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+
+/*Navigation bar*/
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 80px;
+  background: rgba(75, 72, 72, 0.945);
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+  justify-content: flex-end;
+  position: fixed;
+  font-size: 13px;
+
+}
+
+header .logo
+{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header .logo img
+{
+    height: 45px;
+}
+
+header nav
+{
+    float: right;
+}
+
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul
+{
+    list-style: none;
+}
+
+header nav ul li a
+{
+    height: 55px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active
+
+{
+    color: white;
+    background: rgb(0, 170, 170);
+}
+
+.menu-toggle
+{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+header ul li ul
+{
+    position: absolute;
+    background-color:rgba(97, 97, 97, 0.863);
+    display: block;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*End Of Navigation bar*/
+contact-info .fa{
+  margin: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+button.btn {
+    margin: 0 8px;
+}
+button.btn{
+	background-color:#FF8359;
+	border: none;
+}
+.donateTitle h1{
+  color: #BC3F3F;
+  text-align:center;
+  padding-top: 30px;
+}
+
+
+.form select{
+  width: 150px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  align-content:center;
+}
+
+.form input[type=text] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form input[type=Email] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input[type=tel] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  
+} 
+
+.form input[type=text] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+.form input[type=number] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input[type=number] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form input[type=submit] {
+  border: none;
+  height: 50px;
+  width: 200px;
+  outline: none;
+  color: #ffffff;
+  background-color: #FF8359;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.form-success {
+  color: green;
+}
+.input-error {
+  box-shadow: 0 0 5px red;
+}
+
+/*footer*/
+#footer{
+    background: #333;
+    color: #fff;
+    padding:12px;
+}
+
+#footer p{
+    text-align: center;
+}
+
+@media(max-width: 991px)
+{
+    header
+    {
+        padding:0 20px;
+    }
+
+    .menu-toggle
+    {
+        display: block;
+    }
+
+    header nav
+    {
+        /*display: none*/
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background:#333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active
+    {
+        left: 0;
+    }
+    header nav ul
+    {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a
+    {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li ul
+    {
+    width: 100%;
+    }
+
+}

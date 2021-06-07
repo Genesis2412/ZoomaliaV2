@@ -1,0 +1,298 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+/*Navigation bar*/
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 80px;
+    background: rgba(75, 72, 72, 0.945);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    justify-content: flex-end;
+    position: fixed;
+    font-size: 13px;
+
+}
+
+header .logo
+{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header .logo img
+{
+    height: 45px;
+}
+
+header nav
+{
+    float: right;
+}
+
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul
+{
+    list-style: none;
+}
+
+header nav ul li a
+{
+    height: 55px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active
+
+{
+    color: white;
+    background: rgb(0, 170, 170);
+}
+
+.menu-toggle
+{
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+header ul li ul
+{
+    position: absolute;
+    background-color:rgba(97, 97, 97, 0.863);
+    display: block;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header ul li:hover ul
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*End Of Navigation bar*/
+
+/*Banner*/
+#bannerPic
+{
+    width: 100%;
+    height: auto;
+}
+
+#bannerPic img
+{
+    width: 100%;
+    height: auto;
+}
+
+/*Icons*/
+contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/*photo*/
+.photo
+{
+	width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+.photo h1
+{
+    color: #BC3F3F;
+    text-align:center;
+}
+
+#photo_image img
+{
+	width: 50%;
+	height: auto;
+    float:right;
+    padding-left: 20px;
+}
+
+#photo_content
+{
+    padding-left: 20px;
+    width: 50%;
+}
+
+.getBranch
+{
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.follow
+{
+    position: relative;
+    top:25px;
+    padding-top: 15px;
+}
+.sterilisation
+{
+	width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+#photo_image1 img
+{
+	width: 50%;
+	height: auto;
+    float:left;
+    padding-right: 20px;
+}
+
+#photo1_content
+{
+    padding-left: 20px;
+    width: 50%;
+    float: right;
+}
+
+.transportation
+{
+	width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#photo_image2 img
+{
+	width: 50%;
+	height: auto;
+    float:right;
+    padding-left: 20px;
+}
+
+#photo2_content
+{
+     padding-left: 20px;
+    width: 50%;
+ }
+
+ .otherServices
+ {
+	width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#photo_image3 img
+{
+	width: 50%;
+	height: auto;
+    float:left;
+    padding-right: 20px;    
+}
+
+#photo3_content{
+    padding-left: 20px;
+    width: 50%;
+    float: right;
+}
+
+/*footer*/
+#footer{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+#footer p{
+    text-align: center;
+}
+
+@media(max-width: 991px)
+{
+    header
+    {
+        padding:0 20px;
+    }
+
+    .menu-toggle
+    {
+        display: block;
+    }
+
+    header nav
+    {
+        /*display: none*/
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background:#333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active
+    {
+        left: 0;
+    }
+    header nav ul
+    {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li a
+    {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li ul
+    {
+    width: 100%;
+    }
+
+    #bannerPic
+    {
+        position: relative;
+        top: 50px;
+    }
+
+    .photo h1
+    {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
